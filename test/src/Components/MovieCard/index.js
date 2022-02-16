@@ -4,6 +4,7 @@ import "./MovieCard.css";
 
 const MovieCard = (lol) => {
   const movieData = lol;
+
   return (
     <>
       <Tooltip
@@ -11,7 +12,13 @@ const MovieCard = (lol) => {
         placement="leftTop"
         arrowPointAtCenter
         color="black"
-        overlayInnerStyle={{ width: "650px", height: "100px" }}
+        overlayInnerStyle={{
+          maxWidth: 400,
+          minWidth: 200,
+          maxHeight: 400,
+          minHeight: 200,
+        }}
+        defaultVisible={false}
       >
         <Card
           className="custom-card"
